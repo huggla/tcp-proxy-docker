@@ -1,6 +1,6 @@
-FROM alpine:3.10.1
+FROM alpine:edge
 
-RUN apk add --update bash socat
+RUN apk --no-cache add socat
 
 COPY tcp-proxy.sh /usr/bin/tcp-proxy
 
